@@ -38,7 +38,7 @@ public class ProductService implements IProductSer {
     }
 
     @Override
-    public void deleteProduct(Product model) {
-        _repo.delete(model);
+    public void deleteProduct(int id) {
+        _repo.deleteById(id);
     }
 }

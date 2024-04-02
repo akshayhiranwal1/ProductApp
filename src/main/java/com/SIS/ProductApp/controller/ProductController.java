@@ -40,9 +40,9 @@ public class ProductController {
         return new ResponseEntity<Product>(_service.updateProduct(model), HttpStatus.OK);
     }
 
-    @DeleteMapping
-    public void deleteProduct(@RequestBody Product model)
+    @DeleteMapping("{id}")
+    public void deleteProduct(@PathVariable int id)
     {
-        _service.deleteProduct(model);
+        _service.deleteProduct(id);
     }
 }

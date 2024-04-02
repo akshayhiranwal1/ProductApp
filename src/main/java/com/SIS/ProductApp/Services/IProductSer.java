@@ -11,5 +11,5 @@ public interface IProductSer {
     public List<Product> getAllByCategory(int categoryId);
     public Product addProduct(Product model);
     public Product updateProduct(Product model);
-    public void deleteProduct(Product model);
+    public void deleteProduct(int id);
 }
