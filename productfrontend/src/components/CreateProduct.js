@@ -2,6 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import React, {useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {addProduct} from "../Reducers/ProductReducer"
+import MenuComp from "./MenuComp";
 
 function CreateProduct() {
     const categories = useSelector((store)=>store.categories);
@@ -26,6 +27,7 @@ function CreateProduct() {
 
     return (
         <div className="container">
+            <MenuComp/>
             <h2>Create Product</h2>
             <form onSubmit={handleSubmit}>
                 <div>

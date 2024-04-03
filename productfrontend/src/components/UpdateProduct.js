@@ -40,7 +40,7 @@ function UpdateProduct() {
 
     return (
         <div className="container">
-            <h2>Create Product</h2>
+            <h2>Update Product</h2>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Description:</label>

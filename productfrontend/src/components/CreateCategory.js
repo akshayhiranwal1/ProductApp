@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {addCategory} from "../Reducers/CategoryReducer";
 import {useNavigate} from "react-router-dom";
+import MenuComp from "./MenuComp";
 
 function CreateCategory() {
     const [id, setId] = useState("");
@@ -16,6 +17,7 @@ function CreateCategory() {
 
     return (
         <div className="container">
+            <MenuComp/>
             <h2>Create Category</h2>
             <form onSubmit={handleSubmit}>
                 <div>
