@@ -14,4 +14,4 @@ Connection with Sql Server - MsSql JDBC
 
 CRUD Operations for Product and Category using Redux.
 
-Author - Akshay Kumar Hiranwal
+Author - Akshay Hiranwal
